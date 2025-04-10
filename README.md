@@ -6,7 +6,7 @@ Together Culture is a Community Interest Company that gathers a membership commu
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/together_culture.git
+   git clone https://github.com/KhasanovAsadbek/web_project.git
    cd together_culture
    ```
 
