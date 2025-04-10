@@ -7,7 +7,7 @@ Together Culture is a Community Interest Company that gathers a membership commu
 1. Clone the repository:
    ```bash
    git clone https://github.com/KhasanovAsadbek/web_project.git
-   cd together_culture
+   cd web_project
    ```
 
 2. Create a virtual environment:
@@ -33,6 +33,7 @@ Together Culture is a Community Interest Company that gathers a membership commu
 
 6. Run the development server:
    ```bash
+   pip install django
    python manage.py runserver
    ```
 
