@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+    <h2>Welcome to Together Culture</h2>
+    <p>Together Culture is a Community Interest Company that gathers a membership community united in their desire to help create a more equitable and ecological creative economy. It provides facilities, creative leadership, and entrepreneurial skills development, momentum, structure, and resources for people to come together and make change happen.</p>
+    <p>Use the search functionality to find members and events.</p>
+    <a href="{% url 'search_members' %}" class="button">Search Members</a>
+    <a href="{% url 'search_events' %}" class="button">Search Events</a>
+    <a href="{% url 'add_member' %}" class="button">Add Member</a>
+    {% endblock %}
+</body>
+</html>

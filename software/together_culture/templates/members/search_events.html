@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Events</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+    <h2>Search Events</h2>
+    <p>Use the search functionality to find events and see the number of guests and their details.</p>
+    <form method="get">
+        <input type="text" name="q" placeholder="Search events...">
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% for event in events %}
+            <li>{{ event.name }} - {{ event.date }}</li>
+            <p>Guests: {{ visits|length }}</p>
+            <ul>
+                {% for visit in visits %}
+                    {% if visit.event == event %}
+                        <li>{{ visit.member.name }} on {{ visit.visit_date }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </ul>
+    {% endblock %}
+</body>
+</html>

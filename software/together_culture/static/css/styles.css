@@ -1,0 +1,155 @@
+/* === GLOBAL STYLES === */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* === LAYOUT === */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* === HEADER === */
+header {
+    background: linear-gradient(135deg, #4A90E2, #1446A0);
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* === NAVIGATION === */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 12px 22px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* === MAIN CONTENT === */
+main {
+    flex-grow: 1;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* === FOOTER === */
+footer {
+    background: linear-gradient(135deg, #1446A0, #0B2C5D);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* === HEADINGS === */
+h2 {
+    color: #1446A0;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* === FORMS === */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #4A90E2;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus {
+    border-color: #1446A0;
+    outline: none;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.4);
+}
+
+/* === BUTTONS === */
+form button {
+    padding: 12px 28px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background: #4A90E2;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #1446A0;
+    transform: scale(1.05);
+}
+
+/* === LIST STYLES === */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: white;
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
